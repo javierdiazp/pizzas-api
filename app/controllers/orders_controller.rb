@@ -24,7 +24,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.permit(:store_id, :product_ids).with_defaults(product_ids: [])
+    params.permit(:store_id, product_ids: []).with_defaults(product_ids: [])
   end
 
   def set_order
