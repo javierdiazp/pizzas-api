@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Nueva orden</title>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+</head>
+<body>
+<h1><%= @store.name %> - Nueva orden</h1>
+<p>
+  Se ha generado una nueva orden con fecha <%= @order.created_at.strftime("%d/%m/%Y") %>
+  por un cargo total de <%= @order.total %> pesos.
+</p>
+<p>
+  Productos incluidos:
+</p>
+<ul>
+  <% @products.each do |product| %>
+    <li><%= product.name %></li>
+  <% end %>
+</ul>
+</body>
+</html>
