@@ -25,3 +25,6 @@ Lint/AmbiguousBlockAssociation:
 
 Style/Documentation:
   Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
