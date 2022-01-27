@@ -38,6 +38,16 @@ group :development, :test do
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
+
+  # Capistrano for deployment
+  gem 'capistrano', '3.11.2'
+  gem 'capistrano-passenger', '0.2.1'
+  gem 'capistrano-rails', '1.4.0'
+  gem 'capistrano-rbenv', '2.1.4 '
+
+  # SSH 'ed25519' support
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+  gem 'ed25519', '>= 1.2', '< 2.0'
 end
 
 group :development do
