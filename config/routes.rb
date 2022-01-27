@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :stores do
     resources :products, controller: 'stores_products', only: %i[index update destroy]
   end
-  resources :products
+  resources :orders, :products
 end
