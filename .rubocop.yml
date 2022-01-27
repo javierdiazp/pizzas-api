@@ -28,3 +28,6 @@ Style/Documentation:
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
