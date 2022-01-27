@@ -1,0 +1,10 @@
+<%= @store.name %> - Nueva orden
+
+Se ha generado una nueva orden con fecha <%= @order.created_at.strftime("%d/%m/%Y") %>
+por un cargo total de <%= @order.total %> pesos.
+
+Productos incluidos:
+
+<% @products.each do |product| %>
+  - <%= product.name %>
+<% end %>

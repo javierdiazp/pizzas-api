@@ -9,6 +9,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.create_with_products(order_params[:store_id],
                                         order_params[:product_ids])
+    OrderMailer.with(order: @order).new_order.deliver_later
     json_response(@order, :created)
   end
 
